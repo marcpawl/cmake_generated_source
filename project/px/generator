@@ -1,0 +1,5 @@
+#!/bin/bash -ex
+cd `dirname $0`
+mkdir -p build
+echo "void generated() {}" > build/generated.cpp
+exit 0

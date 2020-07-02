@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 3.12)
+project(myproject)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_BUILD_WITH_INSTALL_RPATH ON)
+add_subdirectory(px)
+add_subdirectory(pxlib)
