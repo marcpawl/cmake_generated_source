@@ -21,3 +21,11 @@ RUN \
    cmake3 --build . --target all && \
    find $(pwd)
 
+RUN \
+   source /opt/rh/devtoolset-8/enable && \
+   mkdir build_ninja && \
+   cd build_ninja && \
+   cmake3 -G "Ninja" .. && \
+   cmake3 --build . --target all && \
+   find $(pwd)
+
