@@ -19,7 +19,7 @@ RUN \
    cd build_make && \
    cmake3 -G "Unix Makefiles" .. && \
    cmake3 --build . --target all && \
-   find $(pwd)
+   find $(pwd) -name "lib*"
 
 RUN \
    source /opt/rh/devtoolset-8/enable && \
@@ -27,5 +27,5 @@ RUN \
    cd build_ninja && \
    cmake3 -G "Ninja" .. && \
    cmake3 --build . --target all && \
-   find $(pwd)
+   find $(pwd) -name "lib*"
 
